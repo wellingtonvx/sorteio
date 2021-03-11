@@ -1,0 +1,82 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url('/bg.jpg') no-repeat content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.container > h1{
+  width: 60vw;
+
+  text-align: center;
+
+  font-size: 4rem;
+  color: #eee;
+
+  text-shadow: 3px 2px #000;
+
+  margin-top: -4rem
+}
+
+.inputNumberContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.input{
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.input > span {
+  font-size: 2rem;
+  line-height: 1.8;
+
+  margin: 1rem;
+}
+
+.input> input {
+  font-size: 2rem;
+  height: 5vh;
+  width: 9vw;
+
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+.buttons{
+  padding: 1.8rem 0;
+  
+}
+
+.buttons  button{
+  padding: 1rem;
+  font-size: 1rem;
+  margin: .6rem;
+
+  border-radius: 5px;
+}
+
+.buttons button:last-child{
+  margin-left: 1rem;
+}
+
+
+/*----Responsivo--------*/
+
+@media(max-width: 400px){
+  .container > h1 {
+    font-size: 3rem;
+  }
+
+}

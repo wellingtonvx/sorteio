@@ -1,0 +1,133 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url('/bg.jpg') no-repeat content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.container > h1{
+  width: 60vw;
+
+  text-align: center;
+
+  font-size: 4rem;
+  color: #eee;
+
+  text-shadow: 3px 2px #000;
+
+  margin-top: -4rem
+}
+
+.boxContainer{
+  
+  display: flex;
+}
+
+.button > button{
+  padding: 2rem;
+  margin: 2rem;
+  font-size: 2.3rem;
+  border: 3px solid #ccc;
+
+  border-radius: 5px;
+
+  transition: .5s;
+
+  
+}
+
+.button > button:hover{
+
+  border: 3px solid black;
+
+}
+
+.paricipantes{
+  max-width: 500px;
+  width: 100%;
+
+  max-height: 300px;
+
+  background-color: #fff;
+
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 1px solid black;
+
+  border-radius: 5px;
+}
+
+.paricipantes li {
+  list-style: none;
+  margin: 1rem;
+}
+
+.inputContainer{
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer span {
+  font-size: 2rem;
+}
+
+.inputContainer input {
+  font-size: 1.2rem;
+  height: 2rem;
+  
+  border-radius: 5px;
+}
+
+.inputContainer button {
+  font-size: 1.2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.buttons{
+  padding: 1.8rem 0;
+  
+}
+
+.buttons  button{
+  padding: 1rem;
+  font-size: 1rem;
+  margin: .6rem;
+
+  border-radius: 5px;
+}
+
+.buttons button:last-child{
+  margin-left: 1rem;
+}
+
+/*----Responsivo--------*/
+
+@media(max-width: 400px){
+  .container > h1 {
+    font-size: 3rem;
+  }
+
+  .boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .paricipantes{
+    max-width: 350px;
+  }
+
+  
+}

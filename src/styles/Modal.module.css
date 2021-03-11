@@ -1,0 +1,27 @@
+.winner{
+  font-size: 4rem;
+  color: red;
+  margin-top: -1rem
+}
+
+.closeModal {
+  margin-top: -2.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.3rem
+}
+
+@media(max-width: 400px){
+  .titleModal{
+    font-size: 2rem;
+  }
+
+  .winner{
+    font-size: 2rem;
+  }
+
+  .closeModal {
+    font-size:1rem;
+
+    margin-top:1rem
+  }
+}
